@@ -4,8 +4,8 @@
     <head>
         <meta charset="utf-8">
         <meta content="bad blog" property="og:title" />
-        <meta content="its litteral bad blog :skull: :skull: @everyone" property="og:description" />
-        <meta content="https://https://f4.bcbits.com/img/a1620091242_10.jpg" property="og:url" /> <!-- solstice oneshot -->
+        <meta content="its litteral bad blog :skull: :skull: @everyone (the image is a placeholder)" property="og:description" />
+        <meta content="https://f4.bcbits.com/img/a1620091242_10.jpg" property="og:url" /> <!-- solstice oneshot -->
         <meta content="#" property="og:image" />
         <meta content="#0000ff" data-react-helmet="true" name="theme-color" />
 
@@ -13,11 +13,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <script>
-        if (window.innerWidth<400||window.innerHeight<400){
-            if(window.location.hash!=="#overrideScreenCheck"){
-                console.error("screen too small!")
-                location.replace("small.html")
-            }else{console.warn("screen too small, but force overriden by #overrideScreenCheck")}
+        if(window.location.hash=="#overrideScreenCheck"){
+            console.warn("screen check force cancelled by #overrideScreenCheck")
+        } else if (window.innerWidth<400||window.innerHeight<400){
+            console.error("screen too small!")
+            location.replace(".\blogs\small.html")
+        }
+        if(window.location.hash=="#oopsSizeGood"){ // only for index
+            alert("we assumed your screen size is too small, but it isn't. sorry for the inconvience. go find the page again.")
         }
         </script>
     </head>
@@ -27,14 +30,30 @@
         <p class="subtitle">saving your money, one step at a time</p>
         <br>
 
-        <p class="actualblog">So you want to save your money <i>and</i> not pay taxes, the directions are simple
+        <h1 class="caution"><b><u><em>disclaimer: this is a JOKE. do not follow, you should pay your taxes.</em></u></b></h1>
+        <p class="actualblog">So you want to save your money <i>and</i> not pay taxes, the directions are simple</p>
             <br>
+        <p class="actualblog-steps">step 1: legally idientify as a 17 y/o. altough in some areas, like in canada, where our minimum wage for students are $14.50/hr, you get out of paying those taxes etc.
             <br>
-        step 1: legally idientify as a 17 y/o. altough in some areas, like in canada, where our minimum wage for students are $14.50/hr, you get out of paying those taxes etc.
-            <br>
-        step 2: dont get arrest for fraud.
+        step 2: dont get arrest for fraud, or do if thats your goal.
         </p>
-        <h1>disclaimer: this is a joke.</h1>
-        <p class="actualblog-steps">stop 1: idk</p>
+        <h1 class="yes" style="font-size:2rem">congratulations! you have commited tax fraud!</h1>
+        <p class="actualblog">bonus:<br>how to become the richest person on earth</p>
+        <p class="actualblog-steps">step 1: register a company
+            <br>
+        step 2: make about a couple million stocks or whatever its called lmao
+            <br>
+        step 3: sell ONE stock for 50 dollars
+            <br>
+        step 4: you will now be valued ~300 billion
+        </p>
+        <p class="warning" style="text-align:left;font-size:2.5em">[!] important: step 5: shut down the company before you get charged with fraud... <i>or if you don't want to, well, keep reading</i></p>
+        <p class="actualblog-steps">step 6: assuming you aren't charged for anything so far, or your charges have been dropped, keep your company
+            <br>
+        step 7: assuming you ARE charged for the company, stay on the run
+            <br>
+        step 8: get arrested and sent to space for a permanent enprisonment
+        </p>
+        <h1 class="yes" style="font-size:2rem">congratulations! you were the richest person on earth!</h1>
     </body>
 </html>
