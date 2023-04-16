@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<script>if(window.innerWidth>400&&window.innerHeight>400){location.replace("index.html#oopsSizeGood")}
+// this is special, instead of || (or) we need to use &&. the reason might be obvious.
+// what, you dont know why? ok you get redirected if width is less than 600 or height is less than 600. but then here, its >, meaning it will spam to index, which will spam back here
+// to fix that, you need to check if both is renderable
+// tl;dr instead of || you do && to make sure that both are renderable.
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;400;800&display=swap');
+body{font-family: "lexend", sans-serif;background-color:#1b1b1b;color:#eeeeee}</style>
+<h1>oops...</h1>
+<h3>your screen size is too small (in width or in height?) to render the website correctly!</h3>
+<p>sorry about that.</p>
+<br>
+<p>mistake? try clicking one of these</p>
+<a onclick="r()">try again</a><br>
+<a onclick="t()">force disable screencheck (appends #overrideScreenCheck)</a>
+<p>to disable it either way, add the "#overrideScreenCheck" (without the "") to the page</p>
+<h6>note: the webpage will usually display correctly because i don't know how to code. unless you're using an absurdly small screen it won't show up Willtended™</h6>
+
+<script>
+    function r(){location.replace("index.html")}
+    function t(){location.replace("index.html#overrideScreenCheck")}
+</script>
