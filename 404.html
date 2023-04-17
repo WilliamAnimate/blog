@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="style\css.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1 class="title" style="font-size: 10rem">404</h1>
+    <p onclick="randW(theList)" class="subtitle" style="user-select: none">thats an error. your js does not appear to be working.</p>
+    <p class="actualblog">you look lost.<br>could these links help you?</p>
+    <div class="container">
+      <a href=https://williamanimate.github.io/blog/blogs/1><div class="text">blog 1: commiting tax fraud</div></a>
+    </div>
+    <div class="container">
+        <a href=https://williamanimate.github.io/blog/index.html><div class="text">index.html</div></a>
+    </div>
+  </body>
+  <script>
+    // code in this <script> tag was originally written by Ryan Hinchliffe, from https://stackoverflow.com/questions/62809591/how-to-pick-random-words-in-html)
+    let theList = ["Oops! This page seems to be missing.", "We can't seem to find the page you're looking for.", "Looks like you've hit a dead end.", "The page you requested is not available.", "This is not the page you are looking for.", "Sorry, we couldn't find what you were looking for.", "Looks like you took a wrong turn.", "The page may have been moved or deleted.", "This page has gone missing, just like your socks in the dryer.", "We dropped the 'blog_svc' service, try again?", "Whoa! you <u><a href=https://takeb1nzyto.space/>hit a rate limit!</u></a> slow down.", "That's an error", "Come to find out, the page got stolen", "Come to find out, the page is gone"]
+    function randW(aList){ // THIS CODE (and the html onclick) WORKED FIRST TRY WHOO HOO!!
+    function randomWordPicker(aList){
+      let theListLength = theList.length/10
+      let theAnswer = Math.floor((Math.random()*10)*theListLength)
+      return aList[theAnswer]
+    }
+    let result = randomWordPicker(theList)
+    document.querySelector("p").innerHTML = result
+    }
+    </script>
+</html>

@@ -1,45 +1,73 @@
 /*
-css.css v0.5 - made by WilliamAnimate. https://github.com/williamanimate
-Purpose: minimalistic stylesheet for blogs(?) that *i hope* supports mobile sizes
+css.css v0.6 - made by WilliamAnimate. https://github.com/williamanimate
+Purpose: minimalistic stylesheet that *might* support mobile sizes
 third party fonts used: lexend font extrabold 800, lexend regular 400 and lexend thin 100.
-provided by fonts.googleapis.com
+
+LICENSED UNDER MIT.
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;400;800&display=swap');
+/* 
+  todo: either make color follow #eeeeee or something dumb like that.
+*/
 
-body{
-    font-family: "lexend", sans-serif;
-    background-color:#1b1b1b;
-    color:#eeeeee; /*eeeeee*/
-    text-align:center
-}
-a:link {color: #118bee; background-color: transparent; text-decoration: none}
-a:visited {color: pink; background-color: transparent; text-decoration: none}
-a:hover {color: white; background-color: transparent; text-decoration: underline}
-.h1{font-family: "lexend", sans-serif}
-.title{
-    font-size:5rem;
-    margin-top:1px;
-    margin-bottom:24px;
-    /* link color overrides for links marked as a title, somehow */
-    color: #ffffff;
-}
-.subtitle{
-    font-size: 1em;
-    margin-top: 16px;
-}
-.actualblog{
-    font-size: 2rem;
-}
-.actualblog-steps{
-    font-size:2rem;
-    text-align: left
-}
-.warning{color:yellow}
-.caution{color:red}
-.yes{color:lightgreen}
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;400;800&display=swap");
 
-.todo{
-    font-size:10rem;
-    color:red
+body {
+  font-family: "lexend", sans-serif;
+  background-color: #1b1b1b;
+  color: #eeeeee; /*eeeeee*/
+  text-align: center;
+}
+a:link {color: #118bee;background-color: transparent;text-decoration: none}
+a:visited {color: #118bee; background-color: transparent;text-decoration: none}
+a:hover {color: white;background-color: transparent;text-decoration: underline}
+.h1 {font-family: "lexend", sans-serif}
+.title {
+  font-size: 5rem;
+  margin-top: 1px;
+  margin-bottom: 24px;
+  /* link color overrides for links marked as a title, somehow */
+  color: #ffffff;
+}
+.subtitle {
+  font-size: 1em;
+  margin-top: 16px;
+}
+.actualblog {font-size: 2rem}
+.actualblog-steps {
+  font-size: 2rem;
+  text-align: left;
+}
+.warning {color: yellow}
+.caution {color: red}
+.yes {color: lightgreen}
+
+/* text slide up */
+.container {
+  width: 300px;
+  height: 40px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.container .text {
+  /*
+    todo: fix "hitboxes" for the animation :(
+    (sometimes by being near the "visible box" it goes up anyway
+  */
+  color: #eeeeee;
+  transform: translateY(10%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover .text {transform: translateY(0)} /* the actual animation */
+/* test slide up end */
+
+/* some inspiring css bg (use in seperate file because this isn't miniminalistic anymore and should be custom when porting css.css) etc blah blah
+https://alvarotrigo.com/blog/animated-backgrounds-css/
+*/
+
+.todo {
+  font-size: 5rem;
+  color: red;
 }
