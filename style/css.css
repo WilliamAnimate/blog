@@ -53,7 +53,7 @@ a:hover {color: white;background-color: transparent;text-decoration: underline}
 .container .text {
   /*
     todo: fix "hitboxes" for the animation :(
-    (sometimes by being near the "visible box" it goes up anyway
+    (sometimes by being near the "visible box" it goes up anyway)
   */
   color: #eeeeee;
   transform: translateY(10%);
