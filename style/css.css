@@ -1,9 +1,15 @@
 /*
-css.css v0.6 - made by WilliamAnimate. https://github.com/williamanimate
-Purpose: minimalistic stylesheet that *might* support mobile sizes
+css.css v0.61 - made by WilliamAnimate. https://github.com/williamanimate
+Purpose: minimalistic stylesheet designed to appeal to others
 third party fonts used: lexend font extrabold 800, lexend regular 400 and lexend thin 100.
 
 LICENSED UNDER MIT.
+
+USAGE:
+test as links:
+<a href=https://example.com><div class="text">TEXT HERE</div></a>
+
+TODO: remove container
 */
 
 /* 
@@ -43,6 +49,9 @@ a:hover {color: white;background-color: transparent;text-decoration: underline}
 .yes {color: lightgreen}
 
 /* text slide up */
+/*
+file size reduction: remove containers and just have .text?
+*/
 .container {
   width: 300px;
   height: 40px;
@@ -63,11 +72,14 @@ a:hover {color: white;background-color: transparent;text-decoration: underline}
 .container:hover .text {transform: translateY(0)} /* the actual animation */
 /* test slide up end */
 
+hr { /* credit: https://stackoverflow.com/questions/4151743/how-can-i-change-the-thickness-of-my-hr-tag#4151770*/
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+}
+
 /* some inspiring css bg (use in seperate file because this isn't miniminalistic anymore and should be custom when porting css.css) etc blah blah
 https://alvarotrigo.com/blog/animated-backgrounds-css/
 */
-
-.todo {
-  font-size: 5rem;
-  color: red;
-}

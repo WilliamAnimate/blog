@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style\css.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        .body {
+            user-select: none;
+            overflow: none;
+        }
+        a:link {color: #eeeeee}
+        a:visited {color: #eeeeee}
+        a:hover {color: #eeeeee; text-decoration: none} /* override */
+        .txt{
+            margin-left: 10px;
+            display: inline-block; /* this breaks underlines but it works. */
+            color: #eeeeee;
+            transform: translateY(10%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .txt:hover{transform: translateY(0)}
+        </style>
+    </head>
+    <body>
+        <hr>
+        <a href="https://github.com/WilliamAnimate/blog" target="_blank" rel="noopener noreferrer" class="txt">source</a>
+
+        <a href="terms.html" target="_blank" rel="noopener noreferrer" class="txt">terms</a>
+
+        <a href="privacy.html" target="_blank" rel="noopener noreferrer" class="txt">privacy</a>
+
+        <a href="https://github.com/WilliamAnimate/blog/wiki" target="_blank" rel="noopener noreferrer" class="txt">use cases/instructions</a>
+        
+        <a href="https://github.com/WilliamAnimate/blog/issues" target="_blank" rel="noopener noreferrer" class="txt">report issue/suggestion</a>
+
+        <a href="https://github.com/WilliamAnimate/blog/pulls" target="_blank" rel="noopener noreferrer" class="txt">submit a pull request</a>
+        <p>fork me on github!</p>
+
+        <p style="color: gray">© WilliamAnimate 2023<br>Licenced under MIT.</p>
+    </body>
+</html>

@@ -1,9 +1,12 @@
 # blog
 
-bad custom-written blog with my own custom css and (in edge cases), [mdui](https://mdui.org)
+slightly bad minimalistic blog with my own custom css
 
-ok but for real, im actually kind of happy about how this turned out.
-
+this blog *might* work if you put it into your site, but because this is...
 ## licenced under mit
 
-...etc you get the drill
+, if it breaks im not warrenty-ing you.
+
+###### this is not legal advice.
+
+ok but what i really like what i just created lol

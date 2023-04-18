@@ -2,23 +2,19 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta content="miniminalistic blog" property="og:title" />
-    <meta
-      content="miniminalistic blog page example."
-      property="og:description"
-    />
-    <meta content="#" property="og:url" />
+    <meta charset="utf-8"/>
+    <meta content="miniminalistic blog" property="og:title"/>
+    <meta content="miniminalistic blog page example." property="og:description"/>
+    <meta content="#" property="og:url"/>
     <meta content="./img/a2.png" property="og:image"/>
     <!-- thonker -->
-    <meta content="#0000ff" data-react-helmet="true" name="theme-color" />
+    <meta content="#0000ff" data-react-helmet="true" name="theme-color"/>
 
-    <link rel="stylesheet" href="style/css.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style/css.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <script>
       // the only bad code. of course its js.
-      // can someone refactor plsszsdeferetc.
       if (window.location.hash == "#overrideScreenCheck") {
         console.warn("screen check force cancelled by #overrideScreenCheck");
       } else if (window.innerWidth < 400 || window.innerHeight < 400) {
@@ -32,25 +28,24 @@
   </head>
   <body>
     <div id="headerDiv"><object type="text/html" data="header.html" style="overflow:auto; width: 100%; height: 100%;"></object></div>
-    <a href="https://example.com"
-      ><h1 class="title">
-        Welcome to the blog i guess lol
-      </h1>
-    </a>
+    <a href="https://example.com"><h1 class="title">Welcome to the blog i guess lol</h1></a>
     <p class="subtitle">garbhagte</p>
     <div class="container">
-      <a href=https://williamanimate.github.io/blog/blogs/1><div class="text">blog 1: commiting tax fraud</div></a>
+      <a href=blog1.html><div class="text">blog 1: commiting tax fraud</div></a>
     </div>
     <div class="container">
-        <a href=https://williamanimate.github.io/blog/blogs/1><div class="text">blog 2: building the blog</div></a>
+        <a href=blog2.html><div class="text">blog 2: building the blog</div></a>
     </div>
     <div class="container">
-        <a href=https://williamanimate.github.io/blog/blogs/1><div class="text">blog 3: building flying spirit airlines</div></a>
+        <a href=https://williamanimate.github.io/blog/blogs/1><div class="text">blog 3: </div></a>
     </div>
     <div class="container">
         <a href=.\header.html><div class="text">header test</div></a>
     </div>
+    <div class="container">
+      <a href=.\footer.html><div class="text">footer test</div></a>
+    </div>
 
-    <h1 class="todo">TODO: make better lol</h1>
+    <div id="footerDiv"><object type="text/html" data="footer.html" style="overflow:auto; width: 100%; height: 100%;"></object></div>
   </body>
 </html>

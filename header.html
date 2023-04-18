@@ -5,39 +5,43 @@
         <link rel="stylesheet" href="style\css.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #428bca;
-            border: none;
-            border-radius: 4px;
-            color: #fff;
-            font-size: 16px;
-            text-align: center;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease
+        .body {
+            user-select: none;
+            overflow: none;
         }
+        a:link {color: #eeeeee}
+        a:visited {color: #eeeeee}
+        a:hover {color: #eeeeee; text-decoration: none} /* override */
         .button:hover {
             background-color: #357ebd;
         }
+        .txt {
+            margin-left: 10px;
+            display: inline-block;
+            color: #eeeeee;
+            transform: translateY(10%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .txt:hover {transform: translateY(0)}
         </style>
     </head>
     
     <body>
-        <a href="index.html"><img src=".\img\a2.png" alt="lol" style="width:87px;height:44px;"></a>
-        <button class="button">crash</button>
-        <button class="button">thing</button>
-        <button class="button">thing</button>
-        <button class="button">thing</button>
+        <!-- <a href="#" onclick="c()"><img src=".\img\a2.png" alt="lol" style="width:87px;height:44px; margin-right: 90%;"></a> -->
+        <img src=".\img\a2.png" alt="lol" style="width:87px;height:44px; margin-right: 90%;">
+        
+        <a href="#" target="_blank" rel="noopener noreferrer" class="txt">thing</a>
 
-        <script>
-            function t(){
-                location.replace(index.html);
-            }
-        </script>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="txt">how do i center this align with "thonk" logo help</a>
+
+        <a href="#" target="_blank" rel="noopener noreferrer" class="txt">junk</a>
+
+        <a href="#" target="_blank" rel="noopener noreferrer" class="txt">stuff</a>
+
+        <a href="#" onclick="q()"><div class="txt">softlock tab pls</div></a>
+        <hr>
     </body>
-
-
-
 </html>
+<script>function q(){while(true){alert("tab softlocked llol. ok seriously though why are while{true} allowed in js you could just spam the log and it froze my firefox browser like come on")}}
+function c(){window.close();}
+</script>
