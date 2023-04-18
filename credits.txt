@@ -1,0 +1,23 @@
+Every open source software usually have a credit list etc
+
+header code (used in virtually every file)
+https://stackoverflow.com/questions/51777336/include-header-and-footer-as-separate-files-using-html
+
+people at school
+saying this is claustrophobic and i need to space the elements out, but the thing is, **yall should be glad i added <br> because THAT is the real problem
+
+Vaneer
+for helping me with the header where the text and image aren't aligned on the y axis, or at least, he tried. (this guy so good at html frontend)
+
+css: all me 100%, might explain why its so TERRIBLE
+html: me (except for the headers)
+js: all me, though i dont think there are any more in there
+
+github, for existing
+microsoft, for making vscode, windows, the kernel (the only thing that was properly created that is forced onto your installation), buying spotify so i have something to listen to while developing, and a bunch of other stuff.
+apple, for making an ipad that i use as a second monitor
+school, for being useless
+samsung, for being better than apple.
+the dress, because its gold and white and you can't convince me otherwise, if its not gold and white you're more wrong than "click to ten is easy"
+
+and you, for reading this. why?

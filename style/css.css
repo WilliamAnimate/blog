@@ -1,15 +1,13 @@
 /*
-css.css v0.61 - made by WilliamAnimate. https://github.com/williamanimate
+css.css v0.63 - made by WilliamAnimate. https://github.com/williamanimate
 Purpose: minimalistic stylesheet designed to appeal to others
 third party fonts used: lexend font extrabold 800, lexend regular 400 and lexend thin 100.
 
 LICENSED UNDER MIT.
 
 USAGE:
-test as links:
+the text that slide up thing:
 <a href=https://example.com><div class="text">TEXT HERE</div></a>
-
-TODO: remove container
 */
 
 /* 
@@ -24,15 +22,16 @@ body {
   color: #eeeeee; /*eeeeee*/
   text-align: center;
 }
-a:link {color: #118bee;background-color: transparent;text-decoration: none}
-a:visited {color: #118bee; background-color: transparent;text-decoration: none}
-a:hover {color: white;background-color: transparent;text-decoration: underline}
-.h1 {font-family: "lexend", sans-serif}
+/* was i supposed to make the code formatted? my bad */
+a:link {color:#118bee;background-color:transparent;text-decoration:none}
+a:visited {color:#118bee;background-color:transparent;text-decoration:none}
+a:hover {color:white;background-color:transparent;text-decoration: underline}
+.h1 {font-family:"lexend",sans-serif}
 .title {
   font-size: 5rem;
   margin-top: 1px;
   margin-bottom: 24px;
-  /* link color overrides for links marked as a title, somehow */
+  /* link color overrides for links marked as a title, somehow (remove oneday) */
   color: #ffffff;
 }
 .subtitle {
@@ -41,36 +40,32 @@ a:hover {color: white;background-color: transparent;text-decoration: underline}
 }
 .actualblog {font-size: 2rem}
 .actualblog-steps {
+  /* can we refactor */
   font-size: 2rem;
   text-align: left;
 }
+.actualblog-chapter {
+  font-size: 3.6rem;
+  margin-bottom: 24px /* so subtitles work slightly better */
+}
+
+/* todo: add something for "an aside" or footnotes? */
+
 .warning {color: yellow}
 .caution {color: red}
 .yes {color: lightgreen}
 
 /* text slide up */
-/*
-file size reduction: remove containers and just have .text?
-*/
-.container {
-  width: 300px;
-  height: 40px;
-  overflow: hidden;
-  margin: auto;
-}
-
-.container .text {
-  /*
-    todo: fix "hitboxes" for the animation :(
-    (sometimes by being near the "visible box" it goes up anyway)
-  */
+.text {
   color: #eeeeee;
   transform: translateY(10%);
   transition: transform 0.3s ease-in-out;
+  /* if anyone could put a <br> like thing here without html and only css and tells me how to do it i will give you a virtual head pat
+  why? so i don't have to spam <br> after each class="text" thing.
+  */
 }
-
-.container:hover .text {transform: translateY(0)} /* the actual animation */
-/* test slide up end */
+.text:hover {transform: translateY(0)}
+/* ^the actual animation */
 
 hr { /* credit: https://stackoverflow.com/questions/4151743/how-can-i-change-the-thickness-of-my-hr-tag#4151770*/
   border: none;
@@ -83,3 +78,18 @@ hr { /* credit: https://stackoverflow.com/questions/4151743/how-can-i-change-the
 /* some inspiring css bg (use in seperate file because this isn't miniminalistic anymore and should be custom when porting css.css) etc blah blah
 https://alvarotrigo.com/blog/animated-backgrounds-css/
 */
+
+.classname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /*height: 100vh; /* or any height you want */
+  height: 100px;
+}
+
+#imgid {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* or any margin you want */
+}
